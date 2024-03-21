@@ -1,0 +1,243 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  margin-bottom: 0px;
+}
+
+header nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('hero-background.jpg'); /* Substitua 'hero-background.jpg' pela imagem de fundo desejada */
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  background-color: #555;
+  padding: 40px 20px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: #dfdfdf;
+}
+
+
+/* Estilos para o título dos serviços */
+#services h2 {
+  font-size: 2rem; /* Tamanho da fonte */
+  text-align: center; /* Centralizando o texto */
+  color: #333; /* Cor do texto */
+  padding: 20px;
+}
+
+
+
+/* Estilos para a seção de serviços */
+#services .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.servicos {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.servicos:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.servicos h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.servicos p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+
+/* Contato Section */
+#contact {
+  padding: 2rem;
+  background-color: #f7f7f7;
+}
+
+#contact h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#contact form label {
+  margin-bottom: 0.5rem;
+}
+
+#contact form input,
+#contact form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+#contact form button {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#contact form button:hover {
+  background-color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  #contact form {
+      width: 100%;
+  }
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #bbb;
+}
+
+/* Footer Social Icons */
+.footer-social {
+  margin-top: 20px;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #bbb;
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom: 50px;
+  right: 50px;
+  background-color: #25D366;
+  color: #fff;
+  border-radius: 60px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+.whatsapp-float:hover {
+  background-color: #128C7E;
+  transform: scale(1.1);
+}
+
+.whatsapp-float span {
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 23px;
+}
